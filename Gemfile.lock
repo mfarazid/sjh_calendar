@@ -31,7 +31,6 @@ GEM
       tzinfo (~> 1.1)
     addressable (2.4.0)
     arel (5.0.1.20140414130214)
-    bcrypt (3.1.7)
     better_errors (1.1.0)
       coderay (>= 1.0.0)
       erubis (>= 2.6.6)
@@ -39,9 +38,6 @@ GEM
       debug_inspector (>= 0.0.1)
     bootstrap-sass (3.3.1.0)
       sass (~> 3.2)
-    bootstrap_form (2.2.0)
-    bootstrap_validator_rails (1.1.0)
-      bootstrap_form (~> 2.0)
     bourbon (3.2.3)
       sass (~> 3.2)
       thor
@@ -70,12 +66,6 @@ GEM
     daemons (1.2.2)
     database_cleaner (1.4.1)
     debug_inspector (0.0.2)
-    devise (3.3.0)
-      bcrypt (~> 3.0)
-      orm_adapter (~> 0.1)
-      railties (>= 3.2.6, < 5)
-      thread_safe (~> 0.1)
-      warden (~> 1.2.3)
     diff-lcs (1.2.5)
     erubis (2.7.0)
     eventmachine (1.0.7)
@@ -132,9 +122,6 @@ GEM
     jbuilder (1.5.3)
       activesupport (>= 3.0.0)
       multi_json (>= 1.2.0)
-    jquery-datatables-rails (2.1.10.0.3)
-      jquery-rails
-      sass-rails
     jquery-rails (3.1.4)
       railties (>= 3.0, < 5.0)
       thor (>= 0.14, < 2.0)
@@ -167,9 +154,6 @@ GEM
     notiffany (0.0.6)
       nenv (~> 0.1)
       shellany (~> 0.0)
-    orm_adapter (0.5.0)
-    pickadate-rails (3.5.4.0)
-      railties (>= 3.1.0)
     poltergeist (1.6.0)
       capybara (~> 2.1)
       cliver (~> 0.3.1)
@@ -254,8 +238,6 @@ GEM
     sexp_processor (4.5.1)
     shellany (0.0.1)
     slop (3.6.0)
-    sms-easy (1.2.4)
-      actionmailer (>= 4.0.0)
     spork (0.9.2)
     spring (1.6.3)
     sprockets (2.12.4)
@@ -285,8 +267,6 @@ GEM
     uglifier (2.7.2)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
-    warden (1.2.3)
-      rack (>= 1.0)
     websocket-driver (0.5.4)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.2)
@@ -301,13 +281,10 @@ DEPENDENCIES
   better_errors (= 1.1.0)
   binding_of_caller
   bootstrap-sass
-  bootstrap_form
-  bootstrap_validator_rails (~> 1.1.0)
   bourbon
   capybara
   coffee-rails (~> 4.0.0)
   database_cleaner
-  devise
   execjs
   factory_girl_rails
   faker
@@ -320,13 +297,11 @@ DEPENDENCIES
   high_voltage
   hijri_date
   jbuilder (~> 1.2)
-  jquery-datatables-rails (~> 2.1.10.0.2)
   jquery-rails
   jquery-ui-rails (~> 4.2.1)
   launchy
   meta_request
   mysql2 (= 0.3.16)
-  pickadate-rails
   poltergeist
   pry-rails
   rails (= 4.1.8)
@@ -336,7 +311,6 @@ DEPENDENCIES
   rspec-rails
   sass-rails (~> 4.0.3)
   sdoc (~> 0.4.0)
-  sms-easy
   spork
   spring
   sqlite3

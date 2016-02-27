@@ -13,8 +13,5 @@
  *= require_self
  *= require bootstrap
  *= require font-awesome
- *= require rails_bootstrap_forms
- *= require bootstrapValidator.min
- *= require dataTables/bootstrap/3/jquery.dataTables.bootstrap
  *= require_tree .
  */
