@@ -37,7 +37,7 @@ gem 'bootstrap-sass'
 # gem 'bootstrap_form'
 # display nicer notifications using bootstrap 
 # gem 'toastr-rails'
-gem 'font-awesome-rails'
+gem 'font-awesome-sass', '~> 4.5.0'
 # gem 'jquery-datatables-rails', '~> 2.1.10.0.2'
 # gem 'pickadate-rails'
 # gem 'icheck-rails',  github: 'ricardodovalle/icheck-rails'

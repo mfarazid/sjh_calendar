@@ -1,0 +1,44 @@
+#day-meta
+  .today
+    margin-bottom: -40px
+#year-meta
+  display: inline-block
+  vertical-align: top
+  h3
+    display: inline-block
+
+
+#month-meta
+  h3
+    text-align: center
+  .prev, .next
+    .disabled
+      color: #aaa
+  .prev
+    text-align: right
+  .next
+    text-align: left
+
+@media only screen and (max-width: 30em)
+  #month-meta
+    h3
+      font-size: 1rem
+    .prev, .next
+      font-size: 1.5rem
+
+
+@media only screen and (min-width: 30.063em) and (max-width: 40em)
+  #month-meta
+    h3
+      font-size: 1.375rem
+    .prev, .next
+      font-size: 1.875rem
+
+
+@media only screen and (min-width: 40.063em)
+  #month-meta
+    .prev, .next
+      font-size: 2.1875rem
+
+  #day-meta
+    margin-top: 0.35rem

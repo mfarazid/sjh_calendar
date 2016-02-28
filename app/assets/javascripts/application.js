@@ -12,6 +12,12 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require bootstrap
+//= require bootstrap-sprockets
 //= require jquery.mask.min
-//= require_tree .
+//
+//= require calendar
+
+$(document).ready(function () {
+  'use strict';
+  calendar.setup();
+});

@@ -2,12 +2,27 @@
 <html>
 <head>
   <title>Hijri Calendar For Sulaimani Jamaat</title>
-  <%= stylesheet_link_tag    'application', media: 'all'%>
+  <%= stylesheet_link_tag 'application', media: 'all'%>
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+  <header>
+    <div class="row">
+      <div class="col-sm-12">
+        <%= image_tag("logo.png", alt: "Sulaimani Jamaat Hijri Calendar", class: "logo") %>
+        <h3>SJH - Calendar</h3>
+        <p>A Hijri calendar for Sulaimani Jamaat Muslims</p>
+      </div>
+    </div>
+  </header>
 <%= yield %>
+  <footer>
+    <div class="row">
+      <div class="col-sm-12">
+        <p>2015 - <%= Date.today.year %>, Developed by <a href="http://www.farazi.me/" title="farazi.me"> Faraz Ali</a>. Some rights reserved.</p>
+      </div>
+    </div>
+  </footer>
   <%= javascript_include_tag 'application' %>
 </body>
 </html>
