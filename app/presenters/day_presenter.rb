@@ -18,9 +18,9 @@ class DayPresenter
       date_format_string += " %b"
     end
 
-    if (hijri_date.day == 1 or gregorian_date.yday == 1) and not is_filler
-      date_format_string += " %Y"
-    end
+    # if (hijri_date.day == 1 or gregorian_date.yday == 1) and not is_filler
+    #   date_format_string += " %Y"
+    # end
 
     gregorian_date.strftime(date_format_string)
   end

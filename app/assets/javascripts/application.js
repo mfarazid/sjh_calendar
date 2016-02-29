@@ -13,7 +13,9 @@
 //= require jquery
 //= require jquery_ujs
 //= require bootstrap-sprockets
+//= require jquery.bxslider
 //= require jquery.mask.min
+//= require modernizr
 //
 //= require calendar
 

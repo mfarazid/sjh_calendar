@@ -2,12 +2,44 @@ var calendar = (function ($) {
   'use strict';
 
   var calendar = {
-    
+    slider: null,
+
     // set it all up
     setup: function () {
+      calendar.setupSlider();
       calendar.setupToday();
     },
 
+    // setup the slider
+    setupSlider: function () {
+      calendar.slider = $('.slider').bxSlider({
+        mode: 'horizontal',
+        minSlides: 1,
+        maxSlides: 1,
+        slideWidth: $('.month').width(),
+        slideMargin: 0,
+        startSlide: calendar.isCurrentYear() ? applicationData.today.month - 1 : 0,
+        pager: false,
+        infiniteLoop: false,
+        hideControlOnEnd: true,
+        onSliderLoad: function (currentIndex) {
+          $('#month-meta .title h3').text(
+            $('.month').eq(currentIndex).data('month')
+          );
+        },
+        onSlidePrev: function (slideElement) {
+          $('#month-meta .title h3').text($(slideElement).data('month'));
+        },
+        onSlideNext: function (slideElement) {
+          $('#month-meta .title h3').text($(slideElement).data('month'));
+        },
+        prevText: '<i class="fa fa-angle-double-left fa-3x"></i>',
+        prevSelector: $('#month-meta .prev'),
+        nextText: '<i class="fa fa-angle-double-right fa-3x"></i>',
+        nextSelector: $('#month-meta .next'),
+        touchEnabled: false
+      });
+    },
 
     // setup the today button
     setupToday: function () {

@@ -2,7 +2,7 @@
 
 <section role="main">
   <div class="row">
-    <div id="controls" class="col-sm-10 col-sm-offset-1">
+    <div id="controls" class="col-sm-12">
       <div id="day-meta" class="pull-right">
         <a class="today btn btn-success btn-sm" href="/">Today</a>
       </div>
@@ -17,13 +17,13 @@
   </div>
 
   <div id="month-meta" class="row">
-    <div class="col-sm-2 col-md-3 col-lg-4 prev"></div>
-    <div class="col-sm-2 col-md-3 col-lg-4 title"><h3></h3></div>
-    <div class="col-sm-2 col-md-3 col-lg-4 next"></div>
+    <div class="col-xs-2 prev"></div>
+    <div class="col-xs-8 title"><h3></h3></div>
+    <div class="col-xs-2 next"></div>
   </div>
 
   <div class="row">
-    <div class="col-sm-10 col-sm-offset-1 table-responsive">
+    <div class="col-sm-12">
       <table id="days" class="table table-bordered table-condensed">
         <tbody>
           <tr class="info">
@@ -41,9 +41,9 @@
   </div>
 
   <div class="row">
-    <div class="col-sm-10 col-sm-offset-1 table-responsive">
+    <div class="col-sm-12 table-responsive slider">
       <% @calendar.each_month do |month| %>
-        <p class="label label-default"><%= month.name %></p>
+        
         <table data-month="<%= month.name %>" data-year="<%= @year %>" class="month table table-bordered table-condensed">
           <tbody>
             <% month.each_week do |week| %>
