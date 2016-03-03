@@ -1,0 +1,15 @@
+<% if event %>
+  <div class="bg-icon">
+    <% if event.priority == 1 %>
+      <% if event.phase == 'day' %>
+        <i class="fa fa-sun-o"></i>
+      <% elsif  event.phase == 'important' %>
+        <i class="fa fa-star-o"></i>
+      <% else %>
+        <i class="fa fa-moon-o"></i>
+      <% end %>
+    <% else %>
+      <i class="fa fa-circle"></i>
+    <% end %>
+  </div>
+<% end %>

@@ -16,10 +16,12 @@
 //= require jquery.bxslider
 //= require jquery.mask.min
 //= require modernizr
-//
+//= require jquery.magnific-popup
 //= require calendar
+//= require events
 
 $(document).ready(function () {
   'use strict';
   calendar.setup();
+  events.setup();
 });

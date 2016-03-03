@@ -52,6 +52,16 @@
                   <td class="day<% if day.filler? %> filler<% end %>" data-doy="<%= day.doy %>">
                     <span class="h"><%= raw day.hijri_day %></span>
                     <span class="g"><%= raw day.gregorian_day %></span>
+                    <% if not day.filler? %>
+                      <%= render 'events/event_icon', event: day.events.first %>
+                      <div class="modal-data hide">
+                        <h3><%= raw day.hijri_date_string %></h3>
+                        <h4><%= raw day.gregorian_date_string %></h4>
+                        <ul class="events">
+                          <%= render(day.events) || raw("<li>There are no events on this day.</li>") %>
+                        </ul>
+                      </div>
+                    <% end %>
                   </td>
                 <% end %>
               </tr>
@@ -62,6 +72,7 @@
     </div>
   </div>
 </section>
+<%= render 'modal' %>
 <br />
 <br />
 <script type="text/javascript">

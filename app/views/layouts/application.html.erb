@@ -1,10 +1,26 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>Hijri Calendar For Sulaimani Jamaat</title>
-  <%= stylesheet_link_tag 'application', media: 'all'%>
-  <%= csrf_meta_tags %>
-</head>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="cleartype" content="on">
+    <meta property="og:url"           content="http://www.sjh-calendar.farazi.me" />
+    <meta property="og:type"          content="Website" />
+    <meta property="og:title"         content="Sjh-Calendar" />
+    <meta property="og:description"   content="A Hijri calendar for Sulaimani Jamaat Muslims." />
+    <meta property="og:image"         content="http://sjh-calendar.farazi.me/logo-400.png" />
+    <title>Sjh-Calendar</title>
+    <meta name="description" content="A Hijri calendar for Sulaimani Jamaat Muslims.">
+    <meta name="author" content="Faraz Ali">
+
+    <link rel="canonical" href="http://www.sjh-calendar.farazi.me">
+    <link rel="shortcut icon" href="http://www.sjh-calendar.farazi.me/icon.png">
+    <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <!-- Fav and touch icons -->
+    <%= stylesheet_link_tag 'application', media: 'all'%>
+    <%= csrf_meta_tags %>
+  </head>
 <body>
   <header>
     <div class="row">
@@ -24,5 +40,6 @@
     </div>
   </footer>
   <%= javascript_include_tag 'application' %>
+  <%= render 'layouts/google_analytics' %>
 </body>
 </html>
